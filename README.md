@@ -4,4 +4,4 @@ Pull requests, please! :D This is a convenience repo since sharing patches by em
 # Usage
 1.  Delete/rename the `overflower-template/test` folder.
 2.  Go to the `overflower-template` folder. (the one with lib, obj, tools/overflower, etc.)
-3.  Run `git clone git@github.com:baconator/project-2-tests.git test`.
+3.  Run `git clone git@github.com:baconator/program-analysis-project-tests.git test`.
