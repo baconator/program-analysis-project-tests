@@ -10,6 +10,8 @@ main(int argc, char **argv) {
     tmp = buffer[-1];
     buffer[5] = 3;
     tmp = buffer[5];
+    buffer[4] = 4;
+    tmp = buffer[4];
   }
   {
     unsigned tmp;
@@ -20,6 +22,8 @@ main(int argc, char **argv) {
     tmp = buffer[-1];
     buffer[5] = 3;
     tmp = buffer[5];
+    buffer[4] = 4;
+    tmp = buffer[4];
   }
   return 0;
 }
