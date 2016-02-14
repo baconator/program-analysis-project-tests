@@ -15,7 +15,7 @@ main(int argc, char **argv) {
   }
   {
     unsigned tmp;
-    unsigned buffer[4] = { 0, 0, 0, 0};
+    float buffer[4] = { 0, 0, 0, 0};
     buffer[2] = 1;
     tmp = buffer[2];
     buffer[-1] = 2;
