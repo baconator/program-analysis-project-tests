@@ -24,19 +24,7 @@ foo2(int c, int a, int b) {
 }
 
 int
-foo3(int c, int a, int b) {
-  if (c) {
-    a *= -2;
-    b += 2;
-  } else {
-    a *= 3;
-    b -= 1;
-  }
-  return 10 + a + b; 
-}
-
-int
-foo4(int c, int a, int b) {
+foo(int c, int a, int b) {
   if (c) {
     a *= -2;
     b += 2;
@@ -68,13 +56,13 @@ main(int argc, char **argv) {
   { // upper bound
     int x = 3;
     int y = 2;
-    x = foo3(argc, x, y); 
+    x = foo(argc, x, y); 
     buffer[x] = -1;
   }
   { // false positive
     int x = 2;
     int y = 2;
-    x = foo4(argc, x, y); 
+    x = foo(argc, x, y); 
     buffer[x] = -1;
   }
   return 0;
